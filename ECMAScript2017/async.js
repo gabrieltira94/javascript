@@ -4,5 +4,9 @@ async function fetchData() {
   });
 }
 
-const data = await fetchData();
-console.log(data);
+const main = async () => {
+  const data = await fetchData();
+  console.log(data);
+};
+
+main();
