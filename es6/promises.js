@@ -1,4 +1,4 @@
-async function fetchData() {
+function fetchData() {
   return new Promise((resolve, reject) => {
     // Simulating an API call with setTimeout
     setTimeout(() => {
@@ -21,7 +21,3 @@ fetchData()
     // Handle the rejected promise (error case)
     console.error('Error:', error.message);
   });
-
-// OR using await
-
-await fetchData();
